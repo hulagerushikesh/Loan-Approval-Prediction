@@ -1,0 +1,42 @@
+                                     @ Loan Pproval Prediction
+
+
+@ Source : Kaggle
+
+@ Idea of the project :
+--> Nowadays , Bank faces lots problems regarding the repayments of the loans given to the peoples. Because of this, banks 
+are facing major financial problems.
+For this problem , we can do one thing before passing loans , bank should pass a filter for the loan applicants on the 
+basis of different factors like credit score, financial situation, income certificate, and bank should check wether the
+person has any job or not. In simple term , bank should check the persons capability. And once a person passed the filter
+, bank will able to give him a loan. 
+So for this we need create a model which will predict that bank should approve loan or not.
+
+
+@ Undertanding the dataset :
+--> The loan dataset contains the unique application id for each applicant , then the gender , age , marital status , their
+income and the information about their past loans etc.
+
+@ Overview of the project :
+--> This will a big project , we have to perform lots of tasks and then we will able to make a prediction model. 
+So for this we need to go through process and split the project into some tasks--
+
+Task1 --> Data Pre-processing :
+---> The data is always messy , so in order to make it more clear to anlyse and understand we have to preprocess the data.
+So 1st we will check for the null values and then make some corrections(if there are any). And then we perform some maths
+calculations like taking ratios and will convert all the cols to numeric to make this calculations possible. And will make
+a different col for descision( 0 for no and 1 for yes)
+
+Task2 --> Visualize The Data :
+---> In order to understand the pattern or shape of the data we nned to visualize it. By visualizing we can see the distri
+bution , dependency and corelations among the cols.
+
+Task3 --> Model Building : Logistic Model
+---> In this task we will build our model and will going to train the model and this we are going to use some  steps
+to build model more signifiant--
+ Substep1 --> We will divide the data into 'train' and 'test' ( 70% data for training and 30% for testing).
+ Substep2 --> Apply Feature Scaling in order choose the correct parameters and to reduce errors.
+ Substep3 --> Now we will apply Principle Component Analysis.
+ Substep4 --> In this substep we will build a Naive Bayes model on the training set.
+ Substep5 --> And after building the model we need to train the model, for this we predict the values on test set.
+ Substep6 --> Now for a suitable format for representing actual values and predicted values we will build a confusion matrix
